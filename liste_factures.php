@@ -24,6 +24,8 @@ $itemCount = $stmt->fetchAll(PDO::FETCH_ASSOC);
        <th>TVA</th>
        <th>Quantite</th>
        <th>Date</th>
+       <th></th>
+       <th></th>
      </tr>
    </thead>
 
@@ -35,6 +37,8 @@ $itemCount = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <td><?= $facture['TVA'] ?></td>
       <td><?= $facture['quantite'] ?></td>
       <td><?= $facture['date_de_creation'] ?></td>
+        <td><button>Modifier</button></td>
+        <td><button>Supprimer</button></td>
     </tr>
     <?php } ?>
   </table>
