@@ -37,7 +37,6 @@ class ContactPage extends State<ContactScreen> {
                     SizedBox(height: 10),
                     Container(
                       width: 100,
-                      alignment: ,
                       child: TextField(
                           decoration: InputDecoration(
                             border: OutlineInputBorder(),

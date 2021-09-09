@@ -1,4 +1,4 @@
-import 'contat.dart';
+import 'contact.dart';
 import 'package:flutter/material.dart';
 
 class ContactList extends StatefulWidget {

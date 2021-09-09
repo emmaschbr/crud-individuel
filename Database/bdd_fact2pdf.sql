@@ -24,17 +24,17 @@ CREATE TABLE produit
 
 CREATE TABLE factures
 (
-    id          Int Auto_increment NOT NULL,
-    montant     Double NOT NULL,
-    description Text   NOT NULL,
-    TVA         FLOAT  NOT NULL,
-    quantite    Int    NOT NULL,
+    id               Int Auto_increment NOT NULL,
+    montant          Double NOT NULL,
+    description      VARCHAR(100)  NOT NULL,
+    TVA              FLOAT  NOT NULL,
+    quantite         Int    NOT NULL,
     date_de_creation Date NOT NULL,
-    id_produit  Int,
-    id_client   Int,
+    id_client        Int,
+    id_utilisateur   Int,
     CONSTRAINT factures_PK PRIMARY KEY (id),
-    CONSTRAINT factures_produit_FK FOREIGN KEY (id_produit) REFERENCES produit (id)
-    CONSTRAINT factures_client_FK FOREIGN KEY (id_client) REFERENCES client (id)
+    CONSTRAINT factures_client_FK FOREIGN KEY (id_client) REFERENCES client (id),
+    CONSTRAINT factures_utilisateur_FK FOREIGN KEY (id_client) REFERENCES client (id)
 )ENGINE=InnoDB;
 
 
@@ -51,9 +51,7 @@ CREATE TABLE utilisateur
     mail        Varchar(50) NOT NULL,
     mail2       Varchar(50) NOT NULL,
     is_admin    BIT(1)      NOT NULL,
-    ID_factures Int         NOT NULL,
     CONSTRAINT utilisateur_PK PRIMARY KEY (id),
-    CONSTRAINT utilisateur_factures_FK FOREIGN KEY (id_factures) REFERENCES factures (id)
 )ENGINE=InnoDB;
 
 #------------------------------------------------------------

@@ -1,7 +1,7 @@
 <?php
     
-    include_once('/wamp64/www/fac2PDF/fact2PDF/class/produit.php');
-    include_once('/wamp64/www/fac2PDF/fact2PDF/config/database.php');
+    include_once('/xampp/htdocs/fact2PDF/class/produit.php');
+    include_once('/xampp/htdocs/fact2PDF/config/database.php');
     
     //header('Content-Type: application/json');
 

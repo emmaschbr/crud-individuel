@@ -1,8 +1,8 @@
 <?php
 
-require_once('/wamp64/www/fact2PDF/global/header.html');
-require_once('/wamp64/www/fact2PDF/model/factureModel.php');
-require_once('/wamp64/www/fact2PDF/model/database.php');
+require_once('/xampp/htdocs/fact2PDF/global/header.html');
+require_once('/xampp/htdocs/fact2PDF/model/factureModel.php');
+require_once('/xampp/htdocs/fact2PDF/model/database.php');
 
 
 // instanciation 
