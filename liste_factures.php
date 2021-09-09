@@ -32,7 +32,7 @@ $itemCount = $stmt->fetchAll(PDO::FETCH_ASSOC);
    <?php foreach($itemCount as $facture){
     ?>
     <tr>
-      <td><?= $facture['montant'] ?></td>
+      <td><?= $facture['montant'] ?> </td>
       <td><?= $facture['description'] ?></td>
       <td><?= $facture['TVA'] ?></td>
       <td><?= $facture['quantite'] ?></td>

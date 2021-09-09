@@ -5,6 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df6db5d9-8de9-432f-9a25-3148afcd8798" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/creer_facture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/client/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/client/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/client/read.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/facture/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/facture/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/produit/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/produit/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/produit/read.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/facture.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generation_pdf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/global/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/global/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liste_clients.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/liste_factures.php" beforeDir="false" afterPath="$PROJECT_DIR$/liste_factures.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +47,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
