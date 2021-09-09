@@ -37,7 +37,7 @@ $itemCount = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <td><?= $facture['TVA'] ?></td>
             <td><?= $facture['quantite'] ?></td>
             <td><?= $facture['date_de_creation'] ?></td>
-            <td><button>Modifier</button></td>
+            <td><button type="submit" action="api/facture/update.php">Modifier</button></td>
             <td><button>Supprimer</button></td>
         </tr>
     <?php } ?>
