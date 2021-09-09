@@ -95,9 +95,9 @@ VALUES
 
 INSERT INTO factures (montant, description, TVA, quantite, date_de_creation, ID_client, ID_utilisateur)
 VALUES
-    (64.20, 'nullam ac tortor vitae purus', 20, 2, 07.10.2021, 1, 1),
-    (29.98, 'etiam dignissim diam quis enim lobortis', 20, 1, 26.05.2020, 2, 2),
-    (76.50, 'aliquam faucibus purus', 20, 4, 15.02.2021, 3, 3);
+    (64.20, 'nullam ac tortor vitae purus', 20, 2, '2021.10.07', 1, 1),
+    (29.98, 'etiam dignissim diam quis enim lobortis', 20, 1, '2020.05.26', 2, 2),
+    (76.50, 'aliquam faucibus purus', 20, 4, '2021.02.15', 3, 3);
 
 INSERT INTO utilisateur (user_name, mdp, mdp2, mail, mail2, is_admin)
 VALUES
