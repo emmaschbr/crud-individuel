@@ -1,17 +1,17 @@
 <?php
 
-require_once('/xampp/htdocs/crud-individuel/global/header.html');
-require_once('/xampp/htdocs/crud-individuel/model/factureModel.php');
-require_once('/xampp/htdocs/crud-individuel/model/database.php');
+require_once('./global/header.html');
+require_once('./model/factureModel.php');
+//require_once('./model/database.php');
+require_once ('./verification.php');
 
 
 // instanciation
-$facture = new Facture();
 
-$stmt = $facture->getAllFactures();
+$sql = "SELECT *FROM facture";
 
-$itemCount = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+$db = new mysqli('localhost', 'root', '', 'crud-individuel');
+$result = $db->query($sql);
 ?>
 
 <body>
@@ -19,6 +19,7 @@ $itemCount = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <table>
     <thead>
     <tr>
+        <th>id</th>
         <th>montant</th>
         <th>Description de la facture</th>
         <th>TVA</th>
@@ -29,18 +30,25 @@ $itemCount = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </tr>
     </thead>
 
-    <?php foreach($itemCount as $facture){
+    <?php
+    if ($result) {
+    while ($row = $result->fetch_assoc()) {
         ?>
         <tr>
-            <td><?= $facture['montant'] ?> </td>
-            <td><?= $facture['description'] ?></td>
-            <td><?= $facture['TVA'] ?></td>
-            <td><?= $facture['quantite'] ?></td>
-            <td><?= $facture['date_de_creation'] ?></td>
-            <td><button>Modifier</button></td>
-            <td><button>Supprimer</button></td>
+            <td><?php echo $row['id'] ?> </td>
+            <td><?php echo $row['montant'] ?> </td>
+            <td><?php echo $row['description'] ?></td>
+            <td><?php echo $row['TVA'] ?></td>
+            <td><?php echo $row['quantite'] ?></td>
+            <td><?php echo $row['date_de_creation'] ?></td>
+            <td><a >Modifier</a></td>
+            <td>
+                <a href="delete.php?id=<?php echo row['id']; ?>">Delete</a>
+            </td>
         </tr>
-    <?php } ?>
+    <?php }
+    }
+    ?>
 </table>
 </body>
 

@@ -9,7 +9,7 @@ createFacture () — Créer un enregistrement.
 updateFacture() — Mettre à jour l'enregistrement.
 deleteFacture() — Supprime un enregistrement.
 */
-include '/xampp/htdocs/crud-individuel/model/database.php';
+include './model/database.php';
 
 class Facture {
     
@@ -17,7 +17,7 @@ class Facture {
         protected $conn;
 
         // Champs (colonnes)
-        public $ID;
+        public $id;
         public $montant;
         public $description;
         public $tva;
@@ -105,7 +105,7 @@ class Facture {
 
             $dataRow = $stmt->fetch(PDO::FETCH_ASSOC); // Le paramètre indique à PDO de renvoyer le résultat sous forme de tableau associatif
         
-            $this->ID = $dataRow['ID'];
+            $this->id = $dataRow['id'];
             $this->montant = $dataRow['montant'];
             $this->description = $dataRow['description'];
             $this->tva = $dataRow['tva'];
@@ -118,7 +118,7 @@ class Facture {
             $sqlQuery = "UPDATE
                         factures
                     SET
-                        ID = :ID,
+                        id = :id,
                         montant = :montant, 
                         description = :description, 
                         tva = :tva, 
@@ -137,7 +137,7 @@ class Facture {
             $this->date_de_creation=htmlspecialchars(strip_tags($this->date_de_creation));
         
             // bind data
-            $stmt->bindParam(":ID", $this->Id);
+            $stmt->bindParam(":id", $this->Id);
             $stmt->bindParam(":montant", $this->montant);
             $stmt->bindParam(":description", $this->description);
             $stmt->bindParam(":tva", $this->tva);
@@ -155,7 +155,7 @@ class Facture {
             $sqlQuery = "DELETE FROM factures WHERE id = ?";
             $stmt = $this->conn->prepare($sqlQuery);
         
-            $this->ID=htmlspecialchars(strip_tags($this->ID));
+            $this->id=htmlspecialchars(strip_tags($this->id));
         
             $stmt->bindParam(1, $this->id);
         

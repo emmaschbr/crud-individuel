@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df6db5d9-8de9-432f-9a25-3148afcd8798" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/creer_facture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_client.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/client/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/client/delete.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/client/read.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/facture/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/facture/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/produit/create.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/produit/delete.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/produit/read.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/facture.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generation_pdf.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/global/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/global/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/facture/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/facture/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/facture/update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liste_clients.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/liste_factures.php" beforeDir="false" afterPath="$PROJECT_DIR$/liste_factures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/factureModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/factureModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verification.php" beforeDir="false" afterPath="$PROJECT_DIR$/verification.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +24,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/global/header.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/delete.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/login.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/facture/read.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/deconnect.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/creer_facture.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/model/factureModel.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/model/database.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/verification.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/facture/create.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/index.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
@@ -46,10 +51,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/PC3Indiv" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\crud-individuel" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="login.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/login.php">

@@ -1,6 +1,6 @@
 <?php
 
-include('config/database.php');
+include('model/database.php');
 
 // VERIFICATIONS POUR LA CONNEXION
 session_start();
@@ -51,10 +51,12 @@ if(isset($_POST['user_name']) && isset($_POST['mdp']))
 // VERIFICATION POUR L'INSCRIPTION
 $db_username = 'root';
 $db_password = '';
-$db_name     = 'fac2pdf';
+$db_name     = 'crud-individuel';
 $db_host     = 'localhost';
-$db = mysqli_connect($db_host, $db_username, $db_password, $db_name)
-       or die('could not connect to database');
+$db = new mysqli_connect( $db_host, $db_username, $db_password, $db_name);
+if($db->connect_error) {
+    die("Connection Failed" . $db->connect_error);
+}
 
 if(isset($_POST['forminscription'])) {
 
