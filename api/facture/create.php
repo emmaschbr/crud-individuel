@@ -14,8 +14,10 @@
     $Fac->description = $data['description'];
     $Fac->tva = $data['tva'];
     $Fac->quantite = $data['quantite'];
-    $Fac->id_produit = $data['id_produit'];
-    
+    $Fac->date_de_creation = $data['date_de_creation'];
+    $Fac->ID_client = $data['id_client'];
+    $Fac->ID_utilisateur = $data['id_utilisateur'];
+
     // var_dump($data);
     
     if($Fac->createFacture()){

@@ -1,24 +1,43 @@
 <?php
 
 require_once('/xampp/htdocs/crud-individuel/global/header.html');
+require_once('/xampp/htdocs/crud-individuel/model/factureModel.php');
+require_once('/xampp/htdocs/crud-individuel/model/database.php');
+
+
+// instanciation
+$facture = new Facture();
+
+$stmt = $facture->getAllFactures();
+
+$itemCount = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Mon blog</title>
-		<link href="style.css" rel="stylesheet" /> 
-	</head>
+<body>
+<h1>Liste des factures</h1>
+<table>
+    <thead>
+    <tr>
+        <th>montant</th>
+        <th>Description de la facture</th>
+        <th>TVA</th>
+        <th>Quantite</th>
+        <th>Date</th>
+    </tr>
+    </thead>
 
-	<body>
-	<h2>Bienvenue sur FAC2PDF !</h2>
-	<p> Gérer vos factures et vos clients ! </p></br>
-	<p>Voici les dernieres factures</p>
- 
-        
-        <?php
-        
+    <?php foreach($itemCount as $facture){
         ?>
-    </body>
-</html>
+        <tr>
+            <td><?= $facture['montant'] ?> </td>
+            <td><?= $facture['description'] ?></td>
+            <td><?= $facture['TVA'] ?></td>
+            <td><?= $facture['quantite'] ?></td>
+            <td><?= $facture['date_de_creation'] ?></td>
+
+        </tr>
+    <?php } ?>
+</table>
+</body>
+
