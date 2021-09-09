@@ -18,6 +18,22 @@ CREATE TABLE client(
 
 
 #------------------------------------------------------------
+# Table: utilisateur
+#------------------------------------------------------------
+
+CREATE TABLE utilisateur(
+        ID        Int  Auto_increment  NOT NULL ,
+        user_name Varchar (50) NOT NULL ,
+        mdp       Varchar (50) NOT NULL ,
+        mdp2      Varchar (50) NOT NULL ,
+        mail      Varchar (50) NOT NULL ,
+        mail2     Varchar (50) NOT NULL ,
+        is_admin  TinyINT NOT NULL
+	,CONSTRAINT utilisateur_PK PRIMARY KEY (ID)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
 # Table: factures
 #------------------------------------------------------------
 
@@ -28,29 +44,12 @@ CREATE TABLE factures(
         TVA              Float NOT NULL ,
         quantite         Int NOT NULL ,
         date_de_creation Date NOT NULL ,
-        ID_client        Int NOT NULL
+        ID_client        Int NOT NULL ,
+        ID_utilisateur   Int NOT NULL
 	,CONSTRAINT factures_PK PRIMARY KEY (ID)
 
 	,CONSTRAINT factures_client_FK FOREIGN KEY (ID_client) REFERENCES client(ID)
-)ENGINE=InnoDB;
-
-
-#------------------------------------------------------------
-# Table: utilisateur
-#------------------------------------------------------------
-
-CREATE TABLE utilisateur(
-        ID          Int  Auto_increment  NOT NULL ,
-        user_name   Varchar (50) NOT NULL ,
-        mdp         Varchar (50) NOT NULL ,
-        mdp2        Varchar (50) NOT NULL ,
-        mail        Varchar (50) NOT NULL ,
-        mail2       Varchar (50) NOT NULL ,
-        is_admin    TinyINT NOT NULL ,
-        ID_factures Int NOT NULL
-	,CONSTRAINT utilisateur_PK PRIMARY KEY (ID)
-
-	,CONSTRAINT utilisateur_factures_FK FOREIGN KEY (ID_factures) REFERENCES factures(ID)
+	,CONSTRAINT factures_utilisateur0_FK FOREIGN KEY (ID_utilisateur) REFERENCES utilisateur(ID)
 )ENGINE=InnoDB;
 
 
