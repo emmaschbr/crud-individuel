@@ -1,7 +1,7 @@
 <?php
     
-    include_once('/xampp/htdocs/fact2PDF/model/clientModel.php');
-    include_once('/xampp/htdocs/fact2PDF/model/database.php');
+    include_once('/xampp/htdocs/crud-individuel/model/clientModel.php');
+    include_once('/xampp/htdocs/crud-individuel/model/database.php');
 
    //La méthode GET est utilisée ici car nous ne pouvions pas utiliser POST (casse)
     $data = $_GET; 

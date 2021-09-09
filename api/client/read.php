@@ -1,8 +1,8 @@
 <?php
-    require_once('/xampp/htdocs/fact2PDF/global/header.html');
+    require_once('/xampp/htdocs/crud-individuel/global/header.html');
 
-     include_once('/xampp/htdocs/fact2PDF/model/clientModel.php');
-     require_once('/xampp/htdocs/fact2PDF/model/database.php');
+     include_once('/xampp/htdocs/crud-individuel/model/clientModel.php');
+     require_once('/xampp/htdocs/crud-individuel/model/database.php');
 
     $database = new Database();
     $db = $database->getConnexion();
@@ -43,5 +43,5 @@
     }
 
     // //footer
-    // include('/wamp64/www/fac2PDF/fact2PDF/global/footer.html');
+    // include('/wamp64/www/fac2PDF/crud-individuel/global/footer.html');
 ?>

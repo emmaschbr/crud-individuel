@@ -1,9 +1,9 @@
 <?php
 
-require_once('/xampp/htdocs/fact2PDF/global/header.html');
+require_once('/xampp/htdocs/crud-individuel/global/header.html');
 
-include_once('/xampp/htdocs/fact2PDF/model/factureModel.php');
-include('/xampp/htdocs/fact2PDF/model/database.php');
+include_once('/xampp/htdocs/crud-individuel/model/factureModel.php');
+include('/xampp/htdocs/crud-individuel/model/database.php');
 
     $facture = new Facture();
 

@@ -10,7 +10,7 @@ updateFacture() — Mettre à jour l'enregistrement.
 deleteFacture() — Supprime un enregistrement.
 */
 
-include '/xampp/htdocs/fact2PDF/model/database.php';
+include '/xampp/htdocs/crud-individuel/model/database.php';
 
 class Produit {
     

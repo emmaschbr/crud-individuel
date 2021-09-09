@@ -1,6 +1,6 @@
 <?php
 
-include '/xampp/htdocs/fact2PDF/model/database.php';
+include '/xampp/htdocs/crud-individuel/model/database.php';
 class Client {
     
         // Connection
@@ -11,7 +11,7 @@ class Client {
         public $nom;
         public $email;
         public $telephone;
-        public $adresse;
+        public $addresse;
 
         // Db connection
         public function __construct(){

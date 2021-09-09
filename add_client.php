@@ -1,6 +1,6 @@
 <?php
 
-require_once('/xampp/htdocs/fact2PDF/model/formModel.php');
+require_once('/xampp/htdocs/crud-individuel/model/formModel.php');
 
 $form = new Form();
 

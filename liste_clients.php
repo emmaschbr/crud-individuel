@@ -1,8 +1,8 @@
 <?php
 
-require_once('/xampp/htdocs/fact2PDF/global/header.html');
-require_once('/xampp/htdocs/fact2PDF/model/clientModel.php');
-require_once('/xampp/htdocs/fact2PDF/model/database.php');
+require_once('/xampp/htdocs/crud-individuel/global/header.html');
+require_once('/xampp/htdocs/crud-individuel/model/clientModel.php');
+require_once('/xampp/htdocs/crud-individuel/model/database.php');
 
 
 // instanciation 

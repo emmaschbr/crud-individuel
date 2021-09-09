@@ -1,7 +1,7 @@
 <?php
 
-     include_once('/xampp/htdocs/fact2PDF/model/produitModel.php');
-     include_once('/xampp/htdocs/fact2PDF/fact2PDF/model/database.php');
+     include_once('/xampp/htdocs/crud-individuel/model/produitModel.php');
+     include_once('/xampp/htdocs/crud-individuelmodel/database.php');
 
     $database = new Database();
     $db = $database->getConnexion();

@@ -33,7 +33,7 @@ Vous trouver la base de données dans le dossier database du projet (bdd_fac2pdf
 C:\wamp64\www
 
 # Ensuite, démarrez simplement votre application
-http://localhost/fact2PDF/
+http://localhost/crud-individuel/
 ```
 
 **Note:** Vous pouver générer les documents en format pdf et les envoyer par mail. 

@@ -1,8 +1,8 @@
 <?php
 
-require_once('/xampp/htdocs/fact2PDF/global/header.html');
-require_once('/xampp/htdocs/fact2PDF/model/factureModel.php');
-require_once('/xampp/htdocs/fact2PDF/model/database.php');
+require_once('/xampp/htdocs/crud-individuel/global/header.html');
+require_once('/xampp/htdocs/crud-individuel/model/factureModel.php');
+require_once('/xampp/htdocs/crud-individuel/model/database.php');
 
 
 // instanciation 
@@ -28,14 +28,13 @@ $itemCount = $stmt->fetchAll(PDO::FETCH_ASSOC);
    </thead>
 
    <?php foreach($itemCount as $facture){
-     $date = $facture['created'];
     ?>
     <tr>
       <td><?= $facture['montant'] ?></td>
       <td><?= $facture['description'] ?></td>
       <td><?= $facture['TVA'] ?></td>
       <td><?= $facture['quantite'] ?></td>
-      <td><?= date('d-M-Y', strtotime($date)) // On formate la date pour l'affichage ?></td> 
+      <td><?= $facture['date_de_creation'] ?></td>
     </tr>
     <?php } ?>
   </table>

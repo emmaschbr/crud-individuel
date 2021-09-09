@@ -1,7 +1,7 @@
 <?php
     
-    include_once('/xampp/htdocs/fact2PDF/class/facture.php');
-    include_once('/xampp/htdocs/fact2PDF/config/database.php');
+    include_once('/xampp/htdocs/crud-individuel/class/facture.php');
+    include_once('/xampp/htdocs/crud-individuel/config/database.php');
 
    //La méthode GET est utilisée ici car nous ne pouvions pas utiliser POST (casse)
     $data = $_GET; 

@@ -9,7 +9,7 @@ createFacture () — Créer un enregistrement.
 updateFacture() — Mettre à jour l'enregistrement.
 deleteFacture() — Supprime un enregistrement.
 */
-include '/xampp/htdocs/fact2PDF/model/database.php';
+include '/xampp/htdocs/crud-individuel/model/database.php';
 
 class Facture {
     
@@ -22,8 +22,7 @@ class Facture {
         public $description;
         public $tva;
         public $quantite;
-        public $id_produit;
-        public $created;
+        public $date_de_creation;
 
         // Db connection
         public function __construct(){
@@ -63,14 +62,14 @@ class Facture {
             $this->description = htmlspecialchars(strip_tags($this->description));
             $this->tva = htmlspecialchars(strip_tags($this->tva));
             $this->quantite = htmlspecialchars(strip_tags($this->quantite));
-            $this->id_produit = htmlspecialchars(strip_tags($this->id_produit));
+            $this->date_de_creation = htmlspecialchars(strip_tags($this->date_de_creation));
         
             // bind data
             $stmt->bindParam(":montant", $this->montant);
             $stmt->bindParam(":description", $this->description);
             $stmt->bindParam(":tva", $this->tva);
             $stmt->bindParam(":quantite", $this->quantite);
-            $stmt->bindParam(":id_produit", $this->id_produit);
+            $stmt->bindParam(":creation", $this->date_de_creation);
 
             //var_dump($stmt->debugDumpParams());
             
@@ -89,8 +88,7 @@ class Facture {
                         description, 
                         tva, 
                         quantite, 
-                        id_produit
-                        created
+                        date_de_creation
                       FROM
                         factures
                     WHERE 
@@ -112,8 +110,7 @@ class Facture {
             $this->description = $dataRow['description'];
             $this->tva = $dataRow['tva'];
             $this->quantite = $dataRow['quantite'];
-            $this->ID_produit = $dataRow['id_produit'];
-            $this->created = $dataRow['created'];
+            $this->date_de_creation = $dataRow['creation'];
         }        
 
         // UPDATE facture
@@ -126,8 +123,7 @@ class Facture {
                         description = :description, 
                         tva = :tva, 
                         quantite = :quantite, 
-                        Id_produit = :Id_produit,
-                        created_produit = :created_produit
+                        date_de_creation = :date_de_creation
                     WHERE 
                         id = :id";
         
@@ -138,8 +134,7 @@ class Facture {
             $this->description=htmlspecialchars(strip_tags($this->description));
             $this->tva=htmlspecialchars(strip_tags($this->tva));
             $this->quantite=htmlspecialchars(strip_tags($this->quantite));
-            $this->ID_produit=htmlspecialchars(strip_tags($this->ID_produit));
-            $this->created=htmlspecialchars(strip_tags($this->created));
+            $this->date_de_creation=htmlspecialchars(strip_tags($this->date_de_creation));
         
             // bind data
             $stmt->bindParam(":ID", $this->Id);
@@ -147,8 +142,7 @@ class Facture {
             $stmt->bindParam(":description", $this->description);
             $stmt->bindParam(":tva", $this->tva);
             $stmt->bindParam(":quantite", $this->quantite);
-            $stmt->bindParam(":Id_produit", $this->ID_produit);
-            $stmt->bindParam(":created", $this->created);
+            $stmt->bindParam(":created", $this->date_de_creation);
         
             if($stmt->execute()){
                return true;

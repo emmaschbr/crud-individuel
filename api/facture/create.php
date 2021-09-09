@@ -1,8 +1,8 @@
 <?php
-    include('/xampp/htdocs/fact2PDF/global/header.html');
+    include('/xampp/htdocs/crud-individuel/global/header.html');
 
-    require_once('/xampp/htdocs/fact2PDF/model/factureModel.php');
-    require_once('/xampp/htdocs/fact2PDF/model/database.php');
+    require_once('/xampp/htdocs/crud-individuel/model/factureModel.php');
+    require_once('/xampp/htdocs/crud-individuel/model/database.php');
 
     $data = $_GET; 
     
