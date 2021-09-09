@@ -93,17 +93,17 @@ VALUES
     ('Produit2', '75XZ2761', 'fugiat nulla pariatur', 14.99),
     ('Produit3', 'TS56P892', 'anim id est laborum', 25.50);
 
-INSERT INTO factures (montant, description, TVA, quantite, date_de_creation, ID_client, ID_utilisateur)
-VALUES
-    (64.20, 'nullam ac tortor vitae purus', 20, 2, '2021.10.07', 1, 1),
-    (29.98, 'etiam dignissim diam quis enim lobortis', 20, 1, '2020.05.26', 2, 2),
-    (76.50, 'aliquam faucibus purus', 20, 4, '2021.02.15', 3, 3);
-
 INSERT INTO utilisateur (user_name, mdp, mdp2, mail, mail2, is_admin)
 VALUES
     ('arthur.vigieraudu', 'motdepasse', 'motdepasse', 'arthur.vigieraudu@viacesi.fr', 'arthur.vigieraudu@viacesi.fr', 1),
     ('lola.caillaud', 'motdepasse', 'motdepasse', 'lola.caillaud@viacesi.fr', 'lola.caillaud@viacesi.fr', 0),
     ('emma.scheuber', 'motdepasse', 'motdepasse', 'emma.scheuber@viacesi.fr', 'emma.scheuber@viacesi.fr', 0);
+
+INSERT INTO factures (montant, description, TVA, quantite, date_de_creation, ID_client, ID_utilisateur)
+VALUES
+    (64.20, 'nullam ac tortor vitae purus', 20, 2, '2021.10.07', 1, 1),
+    (29.98, 'etiam dignissim diam quis enim lobortis', 20, 1, '2020.05.26', 2, 2),
+    (76.50, 'aliquam faucibus purus', 20, 4, '2021.02.15', 3, 3);
 
 INSERT INTO produit_facture (ID, ID_factures)
 VALUES
