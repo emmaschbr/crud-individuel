@@ -16,7 +16,7 @@ class Database {
 
     // Propriétés de la base de données
     private $host = "localhost";
-    private $database_name = "fact2pdf";
+    private $database_name = "crud-individuel";
     private $username = "root";
     private $password = "";
 
