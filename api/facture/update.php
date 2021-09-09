@@ -1,7 +1,7 @@
 <?php
 
-include_once('/xampp/htdocs/crud-individuel/class/factureModel.php');
-include_once('/xampp/htdocs/crud-individuel/class/database.php');
+include_once('/wamp64/www/fact2PDF/class/factureModel.php');
+include_once('/wamp64/www/fact2PDF/class/database.php');
 
 //La méthode GET est utilisée
 $data = $_GET;

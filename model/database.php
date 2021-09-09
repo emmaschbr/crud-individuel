@@ -1,13 +1,12 @@
 <?php
 
-/* Voici notre classe de couche d'accès à la base de données, 
+/* Voici notre classe de couche d'accès à la base de données,
 qui nous permet d'établir une connexion à la base de données MySQL. 
 
 Ce fichier contient des méthodes génériques telles que selectet executeStatement
 qui nous permettent de sélectionner des enregistrements dans une base de données. 
 Nous allons créer des classes de modèle correspondantes qui étendent la 
-Databaseclasse.
-*/
+Databaseclasse.*/
 
 // Utilisation de l'extension PDO pour manipuler notre BDD 
 //(evite contre injection SQL et XSS)
@@ -46,5 +45,5 @@ class Database {
     }
     return $this->conn;
 }
-}  
+}
  ?>
